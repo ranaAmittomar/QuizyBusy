@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "106215961073",
+    "project_id": "quizybusy-da9c9",
+    "storage_bucket": "quizybusy-da9c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106215961073:android:545b51856c9d4c579f1450",
+        "android_client_info": {
+          "package_name": "com.example.quizybusy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106215961073-48399f8o1i4au5asadsv13cvtcudikte.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC7NAf2Mz8oAFuWE-tldZeKhJM7n51hUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106215961073-48399f8o1i4au5asadsv13cvtcudikte.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

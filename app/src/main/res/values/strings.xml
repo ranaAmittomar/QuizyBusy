@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">QuizyBusy</string>
+    <string name="signup_here">SignUp Here</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_account_login">Already Have Account ? LogIn</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signup_page_wave">SignUpPageWave</string>
+    <string name="login_here">Login Here</string>
+    <string name="do_not_have_account_signup">Do not have account? SignUp</string>
+    <string name="log_in_btn">Log In</string>
+    <string name="login_page_wave">LoginPageWave</string>
+    <string name="welcome_page_wave">WelcomePageWave</string>
+    <string name="quotes_of_the_day">Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning \n -Albert Einstein</string>
+    <string name="welcome_brainy_people">Welcome Brainy People</string>
+    <string name="get_started">Get Started</string>
+    <string name="welcome_screen_science">WelcomeScreenScience</string>
+    <string name="play_quiz_to_boost">Play Quizzes Brainy People</string>
+    <string name="profile_name">Profile</string>
+    <string name="follow_us">Follow Us</string>
+    <string name="rate_us">Rate Us</string>
+</resources>
