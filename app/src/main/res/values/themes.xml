@@ -2,8 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.QuizyBusy" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+<!--        Below will affect the colors while playing quizzes-->
+        <item name="colorPrimary">#C7C7C7</item>
+        <item name="colorPrimaryVariant">#C7C7C7</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -16,8 +17,9 @@
 
     <style name="Theme.QuizyBusyNoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+<!--        Below will affect colors on main screen-->
+        <item name="colorPrimary">#C7C7C7</item>
+        <item name="colorPrimaryVariant">#C7C7C7</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

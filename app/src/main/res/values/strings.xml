@@ -20,4 +20,5 @@
     <string name="profile_name">Profile</string>
     <string name="follow_us">Follow Us</string>
     <string name="rate_us">Rate Us</string>
+    <string name="profile_picture_text">Profile Picture</string>
 </resources>

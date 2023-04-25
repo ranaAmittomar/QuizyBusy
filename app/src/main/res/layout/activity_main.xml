@@ -41,6 +41,19 @@
                 app:navigationIcon="@drawable/ic_hamburger"
                 android:background="#C8C7C7"
                 app:title="@string/app_name" />
+            <Switch
+                android:id="@+id/switchDarkMode"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Dark Mode"
+                android:paddingStart="180dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                android:textSize="20sp"
+                />
+
+
 
         </com.google.android.material.appbar.AppBarLayout>
 

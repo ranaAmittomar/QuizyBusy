@@ -6,9 +6,13 @@ import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.Switch
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -35,10 +39,20 @@ class MainActivity : AppCompatActivity() {
     private lateinit var firestore: FirebaseFirestore
     private lateinit var btnDatePicker: FloatingActionButton
     private lateinit var readNewsButton: Button
+    private lateinit var darkModeSwitch: Switch
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         readNewsButton = findViewById(R.id.readNewsButton)
+        darkModeSwitch = findViewById(R.id.switchDarkMode)
+        //below method to switch to DARK MODE using a switch BUTTON.
+        darkModeSwitch.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
+            }
+        }
         readNewsButton.setOnClickListener {
             val btnIntent = Intent(this, NewsActivityMain::class.java)
             startActivity(btnIntent)
@@ -117,8 +131,14 @@ class MainActivity : AppCompatActivity() {
         ) //In the QuizBusy field ,we can also pass the R.STRING.APP_NAME(lower_case)
         actionBarDrawerToggle.syncState()
         navigationView.setNavigationItemSelectedListener {
-            startActivity(Intent(this, ProfileActivity::class.java))
-            mainDrawer.closeDrawers()
+            //making drawer menu clickable..
+            when(it.itemId){
+                R.id.btnProfile->Toast.makeText(applicationContext,"Profile Clicked",Toast.LENGTH_SHORT).show()
+                R.id.btnFollowUs->Toast.makeText(applicationContext,"Follow Clicked",Toast.LENGTH_SHORT).show()
+                R.id.rateUs->Toast.makeText(applicationContext,"RateUs Clicked",Toast.LENGTH_SHORT).show()
+                R.id.logOutDra->startActivity(Intent(this,ProfileActivity::class.java))
+            }
+
             true
         }
     }
