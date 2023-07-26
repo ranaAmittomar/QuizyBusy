@@ -22,6 +22,7 @@ class LoginActivity : AppCompatActivity() {
         firebaseAuth=FirebaseAuth.getInstance()
         etEmailAddress=findViewById(R.id.etEmailAddress)
         etPassword=findViewById(R.id.etPassword)
+
         btnLogin=findViewById(R.id.btnLogin)
         btnSignUp=findViewById(R.id.btnSignUp)
         btnLogin.setOnClickListener{
@@ -47,6 +48,7 @@ class LoginActivity : AppCompatActivity() {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
+                //SEARCH CONDITION FOR IF USER DOESN'T EXIST
             }
             else{
                 Toast.makeText(this,"Password or Email Do not match !",Toast.LENGTH_SHORT).show()

@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         readNewsButton = findViewById(R.id.readNewsButton)
         darkModeSwitch = findViewById(R.id.switchDarkMode)
         //below method to switch to DARK MODE using a switch BUTTON.
-        darkModeSwitch.setOnCheckedChangeListener { buttonView, isChecked ->
+        darkModeSwitch.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
             } else {
